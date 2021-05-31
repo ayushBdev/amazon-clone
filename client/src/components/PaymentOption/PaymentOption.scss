@@ -1,0 +1,83 @@
+@mixin flex ($a, $b, $c) {
+    display: flex;
+    flex-direction: $a;
+    justify-content: $b;
+    align-items: $c;
+}
+
+@mixin wid_hei ($a, $b) {
+    width: $a;
+    height: $b;
+}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+.pay_option {
+    @include flex(column, flex-start, flex-start);
+    @include wid_hei(100vw, 100vh);
+    padding: 20px 50px;
+}
+
+.list_div {
+    @include flex(column, flex-start, flex-start);
+    @include wid_hei(fit-content, fit-content);
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 50px;
+    p1 {
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        margin-bottom: 25px;
+    }
+    div {
+        @include flex(row, flex-start, center);
+        @include wid_hei(100%, 100%);
+        border: 1px solid #FBD8B4;
+        border-radius: 5px;
+        margin-top: 15px;
+        padding: 5px 10px;
+        background-color: rgb(252,245,238);
+        p {
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.continue_div {
+    @include flex(column, center, center);
+    @include wid_hei(fit-content, fit-content);
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #F7F7F7;
+    margin-top: 40px;
+}
+
+.continue_btn {
+    border: none;
+    outline: none;
+    padding: 5px 25px;
+    border: 1px solid #A88734;
+    border-radius: 5px;
+    background-color:  rgb(243,205,113);
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin: 10px 0px;
+    &:hover {
+        background-color: rgb(228, 185, 84);
+    }
+    p {
+        font-size: 12px;
+    }
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+}

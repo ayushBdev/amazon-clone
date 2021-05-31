@@ -1,0 +1,65 @@
+@mixin flex ($a, $b, $c) {
+    display: flex;
+    flex-direction: $a;
+    justify-content: $b;
+    align-items: $c;
+}
+
+@mixin wid_hei ($a, $b) {
+    width: $a;
+    height: $b;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+
+.myorderhistory {
+    @include flex(column, flex-start, flex-start);
+    @include wid_hei(100%, fit-content);  
+}
+
+.order_div {
+    @include flex(column, flex-start, flex-start);
+    @include wid_hei(55%, fit-content); 
+    border: 1px solid lightgray;
+    border-radius: 5px; 
+    margin: 20px 60px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.order_details {
+    @include flex(row, space-around, center);
+    @include wid_hei(100%, fit-content); 
+    border-bottom: 1px solid lightgray;
+    background-color: #F6F6F6;
+    padding: 10px 0px;
+    div {
+        @include flex(column, space-between, flex-start);
+        @include wid_hei(fit-content, 32px); 
+    }
+}
+
+.products_detail {
+    @include flex(column, center, flex-start);
+    @include wid_hei(100%, fit-content);
+    padding: 10px 25px;
+    p {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    div {
+        @include flex(row, flex-start, center);
+        @include wid_hei(100%, fit-content);
+        img {
+            @include wid_hei(85px, auto);
+            margin-right: 15px;
+        }
+        p {
+            font-size: 14px;   
+            font-weight: normal;
+        }
+    }
+}

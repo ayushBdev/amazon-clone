@@ -1,0 +1,171 @@
+/*-----------------------------------------------------------------------------------------------------------------*/
+.MuiSvgIcon-root {
+  color: white;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  padding: 4px 10px;
+  font-size: 14px;
+  color: black;
+}
+
+.navbar .MuiSvgIcon-root {
+  color: white;
+}
+
+.slidebar {
+  cursor: pointer;
+}
+
+.logos {
+  border: 1px solid transparent;
+}
+
+.logos img {
+  width: 100px;
+  height: auto;
+  margin-top: 5px;
+}
+
+.searchbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 58vw;
+  height: 40px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.searchbar input {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.searchbar .MuiSvgIcon-root {
+  width: 40px;
+  height: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 6px;
+  cursor: pointer;
+  color: black;
+  background-color: #FEBD69;
+}
+
+.searchbar .MuiSvgIcon-root:hover {
+  background-color: #f19d2f;
+}
+
+.link2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.link2 p, .link2 p1 {
+  font-size: 13px;
+}
+
+.login, .orders, .cart_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+}
+
+.login {
+  width: 150px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.login p1 {
+  font-size: 13px;
+}
+
+.orders {
+  width: 80px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.logos:hover, .login:hover, .orders:hover, .cart_icon:hover {
+  border: 1px solid white;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=Navbar.css.map */

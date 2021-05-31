@@ -1,0 +1,60 @@
+@mixin flex ($a, $b, $c) {
+    display: flex;
+    flex-direction: $a;
+    justify-content: $b;
+    align-items: $c;
+}
+
+@mixin wid_hei ($a, $b) {
+    width: $a;
+    height: $b;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+.cart {
+    @include flex(column, flex-start, center);
+    @include wid_hei(100%, fit-content);
+    min-height: 100vh;
+    background-color: #EAEDED;
+}
+
+.cart_navbar {
+    @include flex(row, center, center);
+    @include wid_hei(100%, fit-content);
+}
+
+.banner {
+    img {
+        @include wid_hei(100%, auto);
+    }
+}
+
+.shop_basket {
+    @include flex(row, center, flex-start);
+    @include wid_hei(100%, fit-content);
+    margin-top: 25px;
+    padding: 0px 20px;
+}
+
+.cartbasket_div {
+    @include flex(column, center, flex-start);
+    @include wid_hei(70%, fit-content);
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    p1 {
+        @include wid_hei(100%, fit-content);
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        border-bottom: 1px solid lightgray;
+        padding: 15px 5px;
+        margin-bottom: 15px;
+    }
+}
+
+.subtotal_div {
+    @include flex(column, center, center);
+    @include wid_hei(30%, fit-content);
+}

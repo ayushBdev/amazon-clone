@@ -1,0 +1,107 @@
+@mixin flex ($a, $b, $c) {
+    display: flex;
+    flex-direction: $a;
+    justify-content: $b;
+    align-items: $c;
+}
+
+@mixin wid_hei ($a, $b) {
+    width: $a;
+    height: $b;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebarMenu__openIcon {
+    @include flex(row, center, center);
+    @include wid_hei(fit-content, fit-content);
+    cursor: pointer;
+    padding: 10px;
+    color: rgb(235, 222, 222);
+    border: 1px solid rgba(255, 255, 255, 0.411);
+    border-radius: 2px;
+}
+
+.sidebarMenu__openIcon:hover {
+    border-color: white;
+}
+
+.sidebarMenu__openIcona {
+    svg {
+        * {
+            @include wid_hei(20px, 18px);
+        }
+    }
+}
+
+* > .sidebarMenu__menuList a {
+  color: #575757;
+  text-decoration: none;
+}
+
+.sidebarMenu__menuList {
+    @include wid_hei(300px, auto);
+}
+
+.links {
+    .MuiSvgIcon-root {
+        color: black;
+    }
+}
+
+.sidebarMenu__menu {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.sidebarMenu__menu {
+    a {
+        @include flex(row, center, center);;
+        padding: 20px;
+        align-items: center;
+    }
+}
+
+.sidebarMenu__menu:hover {
+    background-color: #eaeded;
+}
+
+.sidebarMenu__menu > a:hover a:visited a:active {
+    text-decoration: none !important;
+}
+
+.sidebarMenu__devider {
+    border-bottom: 1px solid #c9c9c9;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.sidebarMenu__signIn, .sidebarMenu__signIn {
+    a {
+        @include flex(row, center, center);
+        @include wid_hei(100%, auto);
+        color: #fdfdfd;
+        background-color: #232f3e;
+        font-size: 19px;
+    }
+}
+
+.sidebarMenu__signIn:active, .sidebarMenu__signIn {
+    a{
+        &:active {
+            background-color: #0f1111;
+        }
+    }
+}
+
+.sidebarMenu__userIcon {
+    @include flex(row, center, center);
+    margin-right: 3%;
+    margin-top: -1%;
+}

@@ -1,0 +1,105 @@
+/*-----------------------------------------------------------------------------------------------------------------*/
+.main_product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px lightgray, 0 0 20px lightgray;
+          box-shadow: 0 0 10px lightgray, 0 0 20px lightgray;
+  cursor: pointer;
+}
+
+.product_imgs img {
+  width: 125px;
+  height: auto;
+}
+
+.product_det {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.product_det p1 {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  margin: 5px 0px;
+}
+
+.product_det p {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+
+.addTOBasket_btn {
+  width: 85%;
+  border: none;
+  outline: none;
+  padding: 5px 0px;
+  border: 1px solid #A88734;
+  border-radius: 5px;
+  background-color: #f3cd71;
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+}
+
+.addTOBasket_btn:hover {
+  background-color: #e4b954;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+/*# sourceMappingURL=Products.css.map */

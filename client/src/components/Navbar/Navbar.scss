@@ -1,0 +1,112 @@
+@mixin flex ($a, $b, $c) {
+    display: flex;
+    flex-direction: $a;
+    justify-content: $b;
+    align-items: $c;
+}
+
+@mixin wid_hei ($a, $b) {
+    width: $a;
+    height: $b;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+.MuiSvgIcon-root {
+    color: white;
+}
+
+.navbar {
+    @include flex(row, space-between, center);
+    @include wid_hei(100%, fit-content);
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    padding: 4px 10px;
+    font-size: 14px;
+    color:  black;
+    .MuiSvgIcon-root {
+        color: white;
+    }
+    
+}
+
+.slidebar {
+    cursor: pointer;
+}
+
+.logos {
+    border: 1px solid transparent;
+    img {
+        @include wid_hei(100px, auto);
+        margin-top: 5px;
+    }
+}
+
+.searchbar {
+    @include flex(row, center, center);
+    @include wid_hei(58vw, 40px);
+    border-radius: 10px;
+    background-color: white;
+    input {
+        @include wid_hei(100%, 100%);
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        padding: 5px;
+        font-size: 15px;
+    }
+    .MuiSvgIcon-root {
+        @include wid_hei(40px, 40px);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 6px;
+        cursor: pointer;
+        color: black;
+        background-color: #FEBD69;
+        &:hover {
+            background-color: rgb(241, 157, 47);
+        }
+    }
+}
+
+.link2 {
+    @include flex(row, space-around, center);
+    @include wid_hei(100%, fit-content);
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    p, p1 {
+        font-size: 13px;
+    }
+}
+
+.login, .orders, .cart_icon {
+    @include flex(row, center, center);
+    @include wid_hei(fit-content, fit-content);
+    padding: 5px 10px;
+    border: 1px solid transparent;
+}
+
+.login {
+    @include wid_hei(150px, fit-content);
+    p1 {
+        font-size: 13px;
+    }
+}
+
+.orders {
+    @include wid_hei(80px, fit-content);
+}
+
+.logos, .login, .orders, .cart_icon {
+    &:hover {
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+}

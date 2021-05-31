@@ -1,0 +1,78 @@
+/*-----------------------------------------------------------------------------------------------------------------*/
+.subtotal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.imgs img {
+  width: 100%;
+  height: auto;
+}
+
+.mains_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 300px;
+  height: 100px;
+  padding: 10px 5px;
+  background-color: white;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.mains_div p {
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.mains_div p span {
+  font-weight: bold;
+}
+
+.buy {
+  border: none;
+  outline: none;
+  padding: 5px 25px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #A88734;
+  background-color: #FFD82F;
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+.buy:hover {
+  background-color: #e4c125;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+}
+/*# sourceMappingURL=Subtotal.css.map */

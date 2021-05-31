@@ -1,0 +1,117 @@
+/*----------------------------------------------------------------------------------------------------------------*/
+.addAddress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100vh;
+  padding: 10px 80px;
+}
+
+.logo_div {
+  margin-bottom: 25px;
+}
+
+.mai_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.form_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.form_div p {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.form_div p1 {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.form_div p2 {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin: 5px 0px;
+}
+
+.form_div select {
+  font-size: 14px;
+  padding: 2px 5px;
+  border: none;
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.form_div .MuiTextField-root {
+  width: 350px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.address_btn {
+  border: none;
+  outline: none;
+  padding: 5px 25px;
+  border: 1px solid #A88734;
+  border-radius: 5px;
+  background-color: #f3cd71;
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.address_btn:hover {
+  background-color: #e4b954;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=AddAddress.css.map */

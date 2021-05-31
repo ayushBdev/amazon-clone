@@ -1,0 +1,34 @@
+@mixin flex ($a, $b, $c) {
+    display: flex;
+    flex-direction: $a;
+    justify-content: $b;
+    align-items: $c;
+}
+
+@mixin wid_hei ($a, $b) {
+    width: $a;
+    height: $b;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+.banner_div {
+    img {
+        @include wid_hei(100%, 60vh);
+    }
+}
+
+.linkss {
+    @include flex(row, space-around, center);
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-row-gap: 50px;
+    margin: 20px 0px;
+    text-decoration: none;
+    color: black;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+}
